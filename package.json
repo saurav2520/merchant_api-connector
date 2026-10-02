@@ -1,0 +1,58 @@
+{
+  "name": "merchant-ai-connector",
+  "version": "0.1.1",
+  "description": "Merchant AI Connector: Secure, private, read-only Model Context Protocol (MCP) connector for WooCommerce store data in Agent Studio.",
+  "type": "module",
+  "mcpName": "io.github.wppoland/merchant-ai-connector",
+  "bin": {
+    "merchant-ai-connector": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wppoland/woocommerce-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wppoland/woocommerce-mcp/issues"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "AGENT_CAPABILITIES.md",
+    "API_TOOLS.md",
+    "SECURITY.md",
+    "DEPLOYMENT.md",
+    "TESTING.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node test/run-all.mjs",
+    "check": "npm run build && node test/run-all.mjs",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "merchant-ai-connector",
+    "agent-studio",
+    "woocommerce",
+    "rest-api",
+    "read-only",
+    "e-commerce"
+  ],
+  "author": "wppoland.com (Original foundation); Merchant AI Connector contributors",
+  "homepage": "https://wppoland.com/en/",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "typescript": "^5.6.0"
+  }
+}

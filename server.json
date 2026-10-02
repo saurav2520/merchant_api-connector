@@ -1,0 +1,42 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.wppoland/merchant-ai-connector",
+  "description": "Merchant AI Connector: Secure, private, read-only Model Context Protocol (MCP) connector for WooCommerce store data in Agent Studio.",
+  "repository": {
+    "url": "https://github.com/wppoland/woocommerce-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "merchant-ai-connector",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "WP_URL",
+          "description": "Base URL of the WooCommerce store (HTTPS required)",
+          "isRequired": true,
+          "format": "string"
+        },
+        {
+          "name": "WC_CONSUMER_KEY",
+          "description": "WooCommerce REST API consumer key (Read-only permission)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true
+        },
+        {
+          "name": "WC_CONSUMER_SECRET",
+          "description": "WooCommerce REST API consumer secret (Read-only permission)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
