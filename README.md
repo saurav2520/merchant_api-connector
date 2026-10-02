@@ -1,3 +1,5 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b1f88a99-b14a-4c4f-9201-5dafae2d9b4e" />
+
 # Merchant AI Connector
 
 A secure, private, strictly read-only [Model Context Protocol (MCP)](https://modelcontextprotocol.io) connector for **WooCommerce stores**, engineered for integration with **Agent Studio** and compatible MCP clients (Claude Desktop, Cursor, Agent SDKs).
